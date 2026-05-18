@@ -30,7 +30,7 @@ function SectionHeading({
   return (
     <h2
       id={id}
-      className="scroll-mt-28 text-lg font-semibold text-slate-900 dark:text-slate-100"
+      className="scroll-mt-28 text-title text-on-surface dark:text-[#e3e3e3]"
     >
       {children}
     </h2>
@@ -47,9 +47,7 @@ export function DocPage({ page, slug }: DocPageProps) {
         <PageHeader title={page.title} description={page.description} />
 
         <section id="overview" className="scroll-mt-28 space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-            Overview
-          </p>
+          <p className="section-label">Overview</p>
           <PageIntro>{page.intro}</PageIntro>
         </section>
 

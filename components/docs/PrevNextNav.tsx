@@ -11,16 +11,16 @@ export function PrevNextNav({ slug }: PrevNextNavProps) {
 
   return (
     <nav
-      className="mt-12 grid gap-4 border-t border-slate-200 pt-8 sm:grid-cols-2"
+      className="mt-12 grid gap-4 border-t border-outline pt-8 sm:grid-cols-2 dark:border-[#3c4043]"
       aria-label="Documentation pagination"
     >
       {prev ? (
         <Link
           href={`/docs/${prev.slug}`}
-          className="group rounded-lg border border-slate-200 p-4 hover:border-brand-300 hover:bg-slate-50"
+          className="group surface-card-elevated block p-5"
         >
-          <span className="text-xs font-medium uppercase text-slate-500">Previous</span>
-          <p className="mt-1 font-medium text-slate-900 group-hover:text-brand-700">
+          <span className="section-label">Previous</span>
+          <p className="mt-2 font-medium text-on-surface group-hover:text-brand-600 dark:text-[#e3e3e3] dark:group-hover:text-[#8ab4f8]">
             {prev.title}
           </p>
         </Link>
@@ -30,10 +30,10 @@ export function PrevNextNav({ slug }: PrevNextNavProps) {
       {next ? (
         <Link
           href={`/docs/${next.slug}`}
-          className="group rounded-lg border border-slate-200 p-4 text-right hover:border-brand-300 hover:bg-slate-50 sm:col-start-2"
+          className="group surface-card-elevated block p-5 text-right sm:col-start-2"
         >
-          <span className="text-xs font-medium uppercase text-slate-500">Next</span>
-          <p className="mt-1 font-medium text-slate-900 group-hover:text-brand-700">
+          <span className="section-label">Next</span>
+          <p className="mt-2 font-medium text-on-surface group-hover:text-brand-600 dark:text-[#e3e3e3] dark:group-hover:text-[#8ab4f8]">
             {next.title}
           </p>
         </Link>

@@ -6,25 +6,35 @@ type BreadcrumbsProps = {
 };
 
 export function Breadcrumbs({ slug }: BreadcrumbsProps) {
-  const item = getNavItem(slug);
+  const current = getNavItem(slug);
+
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-500">
-      <ol className="flex flex-wrap items-center gap-1.5">
+    <nav aria-label="Breadcrumb" className="mb-6 text-sm text-on-surface-muted">
+      <ol className="flex flex-wrap items-center gap-1">
         <li>
-          <Link href="/" className="hover:text-slate-900">
+          <Link href="/" className="rounded-full px-2 py-1 hover:bg-surface-container hover:text-brand-600 dark:hover:bg-[#28292a] dark:hover:text-[#8ab4f8]">
             Home
           </Link>
         </li>
-        <li aria-hidden>/</li>
+        <li aria-hidden className="text-on-surface-muted">
+          /
+        </li>
         <li>
-          <Link href="/docs/mobile-engineering-2026" className="hover:text-slate-900">
+          <Link
+            href="/docs/start-here"
+            className="rounded-full px-2 py-1 hover:bg-surface-container hover:text-brand-600 dark:hover:bg-[#28292a] dark:hover:text-[#8ab4f8]"
+          >
             Docs
           </Link>
         </li>
-        {item && (
+        {current && (
           <>
-            <li aria-hidden>/</li>
-            <li className="font-medium text-slate-700">{item.title}</li>
+            <li aria-hidden className="text-on-surface-muted">
+              /
+            </li>
+            <li className="truncate px-2 font-medium text-on-surface dark:text-[#e3e3e3]">
+              {current.title}
+            </li>
           </>
         )}
       </ol>

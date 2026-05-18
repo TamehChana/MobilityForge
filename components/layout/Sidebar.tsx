@@ -17,16 +17,15 @@ export function Sidebar({ className, onNavigate }: SidebarProps) {
   return (
     <aside
       className={cn(
-        "flex w-72 shrink-0 flex-col border-r border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900",
-        "h-[calc(100vh-3.5rem)] lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)]",
+        "flex w-[280px] shrink-0 flex-col border-r border-outline bg-surface",
+        "h-[calc(100vh-4rem)] lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]",
+        "dark:border-[#3c4043] dark:bg-[#131314]",
         className,
       )}
     >
-      <div className="border-b border-slate-200 px-4 py-4 dark:border-slate-800">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-          Documentation
-        </p>
-        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+      <div className="border-b border-outline px-4 py-5 dark:border-[#3c4043]">
+        <p className="section-label">Documentation</p>
+        <p className="mt-1 text-sm text-on-surface-variant dark:text-[#c4c7c5]">
           {DOC_NAV.length} guides for any project
         </p>
         <DocSearch className="mt-4" onNavigate={onNavigate} />
@@ -37,7 +36,7 @@ export function Sidebar({ className, onNavigate }: SidebarProps) {
           if (!items.length) return null;
           return (
             <section key={category.id} className="mb-6 last:mb-0">
-              <h3 className="mb-2 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+              <h3 className="mb-2 px-4 text-[11px] font-medium tracking-wide text-on-surface-muted uppercase">
                 {category.label}
               </h3>
               <ul className="space-y-0.5">
@@ -50,10 +49,10 @@ export function Sidebar({ className, onNavigate }: SidebarProps) {
                         href={href}
                         onClick={onNavigate}
                         className={cn(
-                          "block rounded-md px-3 py-2 text-sm transition-colors",
+                          "block rounded-full px-4 py-2 text-sm transition-colors",
                           active
-                            ? "border-l-2 border-brand-600 bg-brand-50 font-medium text-brand-800 dark:bg-brand-950/50 dark:text-brand-200"
-                            : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-100",
+                            ? "nav-link-active"
+                            : "nav-link",
                         )}
                       >
                         {item.title}

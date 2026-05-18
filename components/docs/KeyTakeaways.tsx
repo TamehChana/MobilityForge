@@ -5,14 +5,20 @@ type KeyTakeawaysProps = {
 export function KeyTakeaways({ items }: KeyTakeawaysProps) {
   if (!items.length) return null;
   return (
-    <section className="rounded-xl border border-brand-200 bg-brand-50/60 p-5 dark:border-brand-800 dark:bg-brand-950/30">
-      <h2 className="text-sm font-semibold uppercase tracking-wide text-brand-800 dark:text-brand-200">
-        Key takeaways
-      </h2>
-      <ul className="mt-3 space-y-2">
+    <section className="rounded-2xl border border-brand-200 bg-brand-50 p-6 dark:border-[#394457] dark:bg-[#1a2332]">
+      <h2 className="text-sm font-medium text-brand-800 dark:text-[#d2e3fc]">Key takeaways</h2>
+      <ul className="mt-4 space-y-3">
         {items.map((item) => (
-          <li key={item} className="flex gap-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600" aria-hidden />
+          <li
+            key={item}
+            className="flex gap-3 text-sm leading-relaxed text-on-surface-variant dark:text-[#c4c7c5]"
+          >
+            <span
+              className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-[10px] font-bold text-white dark:bg-[#8ab4f8] dark:text-[#062e6f]"
+              aria-hidden
+            >
+              ✓
+            </span>
             {item}
           </li>
         ))}

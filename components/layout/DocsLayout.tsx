@@ -14,10 +14,10 @@ export function DocsLayout({ children }: DocsLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950">
+    <div className="flex min-h-screen flex-col bg-surface-dim dark:bg-[#131314]">
       <a
         href="#doc-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white"
       >
         Skip to content
       </a>
@@ -29,14 +29,14 @@ export function DocsLayout({ children }: DocsLayoutProps) {
         {sidebarOpen && (
           <button
             type="button"
-            className="fixed inset-0 z-30 bg-slate-900/40 lg:hidden"
+            className="fixed inset-0 z-30 bg-[#202124]/50 lg:hidden"
             aria-label="Close menu"
             onClick={() => setSidebarOpen(false)}
           />
         )}
         <Sidebar
           className={cn(
-            "fixed inset-y-0 left-0 z-40 mt-14 w-72 transition-transform duration-200 ease-out lg:relative lg:z-0 lg:mt-0 lg:translate-x-0",
+            "fixed inset-y-0 left-0 z-40 mt-16 w-[280px] transition-transform duration-200 ease-out lg:relative lg:z-0 lg:mt-0 lg:translate-x-0",
             sidebarOpen ? "translate-x-0" : "-translate-x-full",
           )}
           onNavigate={() => setSidebarOpen(false)}
@@ -44,9 +44,9 @@ export function DocsLayout({ children }: DocsLayoutProps) {
         <div className="flex min-w-0 flex-1 flex-col">
           <main
             id="doc-content"
-            className="flex-1 px-4 py-8 sm:px-8 lg:px-10 lg:py-10"
+            className="flex-1 px-4 py-8 sm:px-8 lg:px-12 lg:py-10"
           >
-            <div className="mx-auto max-w-4xl rounded-xl border border-slate-200 bg-white px-6 py-8 shadow-sm dark:border-slate-700 dark:bg-slate-900 sm:px-8 sm:py-10">
+            <div className="surface-card mx-auto max-w-4xl px-6 py-8 sm:px-10 sm:py-10">
               {children}
             </div>
           </main>

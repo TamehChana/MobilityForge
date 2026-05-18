@@ -10,10 +10,10 @@ type CodeBlockProps = {
 export function CodeBlock({ code, language = "typescript" }: CodeBlockProps) {
   return (
     <div className="group relative">
-      <div className="absolute right-2 top-2 z-10 opacity-0 transition-opacity group-hover:opacity-100">
+      <div className="absolute right-3 top-3 z-10">
         <CopyButton text={code} label="Copy code" />
       </div>
-      <pre className="overflow-x-auto rounded-xl border border-slate-700/50 bg-slate-900 p-4 pr-24 text-[13px] leading-6 text-slate-100 shadow-inner dark:border-slate-600">
+      <pre className="overflow-x-auto rounded-2xl bg-[#202124] p-5 pr-28 text-[13px] leading-6 text-[#e8eaed] dark:bg-[#0e0e0e]">
         <code className="font-mono" data-language={language}>
           {code}
         </code>

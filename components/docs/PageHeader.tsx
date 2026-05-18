@@ -5,14 +5,14 @@ type PageHeaderProps = {
 
 export function PageHeader({ title, description }: PageHeaderProps) {
   return (
-    <header className="border-b border-slate-200 pb-8">
-      <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">
-        MobilityForge Guide
-      </p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+    <header className="border-b border-outline pb-8 dark:border-[#3c4043]">
+      <p className="chip">MobilityForge guide</p>
+      <h1 className="mt-4 text-display text-on-surface dark:text-[#e3e3e3] sm:text-[2.5rem]">
         {title}
       </h1>
-      <p className="mt-4 text-lg leading-relaxed text-slate-600">{description}</p>
+      <p className="mt-4 text-body-lg text-on-surface-variant dark:text-[#c4c7c5]">
+        {description}
+      </p>
     </header>
   );
 }

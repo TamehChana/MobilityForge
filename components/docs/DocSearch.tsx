@@ -25,7 +25,7 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
         <input
           id="doc-search"
           type="search"
-          placeholder="Search guides…"
+          placeholder="Search guides"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => {
@@ -35,13 +35,13 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
               setQuery("");
             }
           }}
-          className="w-full rounded-lg border border-slate-200 bg-white py-2 pl-9 pr-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+          className="input-field"
         />
       </div>
       {query.trim() && (
-        <ul className="mt-2 max-h-64 overflow-y-auto rounded-lg border border-slate-200 bg-white shadow-lg">
+        <ul className="mt-2 max-h-72 overflow-y-auto rounded-2xl border border-outline bg-surface py-1 shadow-elevation-3 dark:border-[#3c4043] dark:bg-[#1e1f20]">
           {results.length === 0 ? (
-            <li className="px-3 py-2 text-sm text-slate-500">No guides found</li>
+            <li className="px-4 py-3 text-sm text-on-surface-muted">No guides found</li>
           ) : (
             results.map((item) => (
               <li key={item.slug}>
@@ -51,10 +51,12 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
                     onNavigate?.();
                     setQuery("");
                   }}
-                  className="block border-b border-slate-100 px-3 py-2 last:border-0 hover:bg-slate-50"
+                  className="block px-4 py-3 transition-colors hover:bg-surface-container dark:hover:bg-[#28292a]"
                 >
-                  <p className="text-sm font-medium text-slate-900">{item.title}</p>
-                  <p className="mt-0.5 line-clamp-1 text-xs text-slate-500">
+                  <p className="text-sm font-medium text-on-surface dark:text-[#e3e3e3]">
+                    {item.title}
+                  </p>
+                  <p className="mt-0.5 line-clamp-2 text-xs text-on-surface-muted">
                     {item.snippet || item.description}
                   </p>
                 </Link>
@@ -70,19 +72,12 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
 function SearchIcon() {
   return (
     <svg
-      className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
-      fill="none"
+      className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-on-surface-muted"
+      fill="currentColor"
       viewBox="0 0 24 24"
-      stroke="currentColor"
       aria-hidden
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-      />
+      <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
     </svg>
   );
 }
-

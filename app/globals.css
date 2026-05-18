@@ -3,51 +3,131 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #ffffff;
+  --foreground: #1f1f1f;
+  --surface-dim: #f8f9fa;
+  --surface-container: #f1f3f4;
   --card: #ffffff;
-  --border: #e2e8f0;
-  --accent: #0284c7;
+  --border: #dadce0;
+  --accent: #1a73e8;
+  --accent-hover: #1765cc;
+  --accent-container: #e8f0fe;
 }
 
 .dark {
-  --background: #0f172a;
-  --foreground: #f1f5f9;
-  --card: #1e293b;
-  --border: #334155;
-  --accent: #38bdf8;
+  --background: #131314;
+  --foreground: #e3e3e3;
+  --surface-dim: #1e1f20;
+  --surface-container: #28292a;
+  --card: #1e1f20;
+  --border: #3c4043;
+  --accent: #8ab4f8;
+  --accent-hover: #aecbfa;
+  --accent-container: #394457;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 ::selection {
-  background-color: #e0f2fe;
-  color: #0c4a6e;
+  background-color: #e8f0fe;
+  color: #174ea6;
 }
 
 .dark ::selection {
-  background-color: #0c4a6e;
-  color: #e0f2fe;
+  background-color: #394457;
+  color: #e8f0fe;
 }
 
 @layer base {
   h1,
   h2,
   h3 {
-    @apply scroll-mt-28 tracking-tight text-slate-900 dark:text-slate-100;
+    @apply scroll-mt-28 text-on-surface dark:text-[#e3e3e3];
   }
 }
 
 @layer components {
   .doc-prose {
-    @apply text-base leading-relaxed text-slate-700 dark:text-slate-300;
+    @apply text-[15px] leading-7 text-on-surface-variant dark:text-[#c4c7c5];
   }
 
-  .doc-prose p {
-    @apply leading-7;
+  .surface-card {
+    @apply rounded-2xl border border-outline bg-surface shadow-elevation-1
+      dark:border-[#3c4043] dark:bg-[#1e1f20] dark:shadow-none;
+  }
+
+  .surface-card-elevated {
+    @apply rounded-2xl border border-outline/80 bg-surface shadow-elevation-2
+      transition-shadow duration-200 hover:shadow-elevation-3
+      dark:border-[#3c4043] dark:bg-[#1e1f20];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-600 px-6 py-2.5
+      text-sm font-medium text-white shadow-elevation-1 transition-all
+      hover:bg-brand-700 hover:shadow-elevation-2
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+      focus-visible:outline-brand-600
+      dark:bg-[#8ab4f8] dark:text-[#062e6f] dark:hover:bg-[#aecbfa]
+      dark:focus-visible:outline-[#8ab4f8];
+  }
+
+  .btn-outlined {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-outline
+      bg-surface px-6 py-2.5 text-sm font-medium text-brand-600 shadow-elevation-1
+      transition-all hover:bg-brand-50 hover:shadow-elevation-2
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+      focus-visible:outline-brand-600
+      dark:border-[#5f6368] dark:bg-transparent dark:text-[#8ab4f8]
+      dark:hover:bg-[#28292a];
+  }
+
+  .btn-text {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm
+      font-medium text-brand-600 transition-colors hover:bg-brand-50
+      dark:text-[#8ab4f8] dark:hover:bg-[#28292a];
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-lg bg-brand-50 px-2.5 py-1 text-xs font-medium
+      text-brand-800 dark:bg-[#394457] dark:text-[#d2e3fc];
+  }
+
+  .input-field {
+    @apply w-full rounded-full border border-outline bg-surface py-2.5 pl-11 pr-4 text-sm
+      text-on-surface shadow-elevation-1 transition-shadow placeholder:text-on-surface-muted
+      focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100
+      dark:border-[#5f6368] dark:bg-[#1e1f20] dark:text-[#e3e3e3] dark:focus:ring-[#394457];
+  }
+
+  .nav-link-active {
+    @apply bg-brand-50 font-medium text-brand-700 dark:bg-[#394457] dark:text-[#d2e3fc];
+  }
+
+  .nav-link {
+    @apply rounded-full px-4 py-2 text-sm text-on-surface-variant transition-colors
+      hover:bg-surface-container dark:text-[#c4c7c5] dark:hover:bg-[#28292a];
+  }
+
+  .section-label {
+    @apply text-xs font-medium tracking-wide text-on-surface-muted uppercase;
+  }
+
+  .hero-mesh {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(26, 115, 232, 0.12), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(52, 168, 83, 0.06), transparent),
+      radial-gradient(ellipse 50% 30% at 0% 100%, rgba(234, 67, 53, 0.05), transparent);
+  }
+
+  .dark .hero-mesh {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(138, 180, 248, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(129, 201, 149, 0.04), transparent);
   }
 }
 

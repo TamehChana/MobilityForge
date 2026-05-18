@@ -4,6 +4,8 @@ type PageIntroProps = {
 
 export function PageIntro({ children }: PageIntroProps) {
   return (
-    <p className="text-base leading-7 text-slate-700">{children}</p>
+    <p className="text-[15px] leading-7 text-on-surface-variant dark:text-[#c4c7c5]">
+      {children}
+    </p>
   );
 }
