@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --accent: #0284c7;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --card: #1e293b;
+  --border: #334155;
+  --accent: #38bdf8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+::selection {
+  background-color: #e0f2fe;
+  color: #0c4a6e;
+}
+
+.dark ::selection {
+  background-color: #0c4a6e;
+  color: #e0f2fe;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply scroll-mt-28 tracking-tight text-slate-900 dark:text-slate-100;
+  }
+}
+
+@layer components {
+  .doc-prose {
+    @apply text-base leading-relaxed text-slate-700 dark:text-slate-300;
+  }
+
+  .doc-prose p {
+    @apply leading-7;
+  }
+}
+
+@media print {
+  aside,
+  nav,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  article {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
