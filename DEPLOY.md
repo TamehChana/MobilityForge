@@ -46,7 +46,7 @@ Redeploy so sitemap and metadata use the correct domain.
 
 ## Custom domain (optional)
 
-Vercel → Project → **Settings** → **Domains** → add your domain.
+Vercel: Project, **Settings**, **Domains**, then add your domain.
 
 ## Troubleshooting
 

@@ -21,7 +21,7 @@ export function PrevNextNav({ slug }: PrevNextNavProps) {
         >
           <span className="text-xs font-medium uppercase text-slate-500">Previous</span>
           <p className="mt-1 font-medium text-slate-900 group-hover:text-brand-700">
-            ← {prev.title}
+            {prev.title}
           </p>
         </Link>
       ) : (
@@ -34,7 +34,7 @@ export function PrevNextNav({ slug }: PrevNextNavProps) {
         >
           <span className="text-xs font-medium uppercase text-slate-500">Next</span>
           <p className="mt-1 font-medium text-slate-900 group-hover:text-brand-700">
-            {next.title} →
+            {next.title}
           </p>
         </Link>
       ) : null}

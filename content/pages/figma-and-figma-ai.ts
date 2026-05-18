@@ -5,7 +5,7 @@ export const figmaAndFigmaAi = definePage({
   title: "Figma and Figma AI",
   description: "Design systems, prototypes, AI-assisted exploration, and developer handoff.",
   intro:
-    "Figma is the primary design tool for wireframes, UI, design systems, prototypes, and handoff. Figma AI can speed first drafts — but humans must refine usability, accessibility, and brand.",
+    "Figma is the primary design tool for wireframes, UI, design systems, prototypes, and handoff. Figma AI can speed first drafts, but humans must refine usability, accessibility, and brand.",
   whyItMatters:
     "Shared Figma files align designers and developers. AI drafts save time only when the team still validates flow, readability, and real user needs.",
   howToApply: [
@@ -15,7 +15,7 @@ export const figmaAndFigmaAi = definePage({
     },
     {
       heading: "Review AI output",
-      body: "Check clarity, tap targets, text size, navigation, accessibility, and whether the flow solves the real problem — then refine manually.",
+      body: "Check clarity, tap targets, text size, navigation, accessibility, and whether the flow solves the real problem, then refine manually.",
     },
   ],
   commonMistakes: [

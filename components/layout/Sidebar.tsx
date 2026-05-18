@@ -27,7 +27,7 @@ export function Sidebar({ className, onNavigate }: SidebarProps) {
           Documentation
         </p>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          {DOC_NAV.length} guides — reusable on any project
+          {DOC_NAV.length} guides for any project
         </p>
         <DocSearch className="mt-4" onNavigate={onNavigate} />
       </div>

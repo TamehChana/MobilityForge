@@ -1,4 +1,4 @@
-/** Default key takeaways and related links when a page omits them — keeps every guide reusable. */
+/** Default key takeaways and related links when a page omits them. */
 export const PAGE_METADATA: Record<
   string,
   { keyTakeaways: string[]; relatedSlugs: string[] }
@@ -7,7 +7,7 @@ export const PAGE_METADATA: Record<
     keyTakeaways: [
       "Treat mobile as full-stack: UI, API, auth, security, and ops together.",
       "Define users, roles, and data flow before the first screen.",
-      "Use the same workflow on every project — only the product changes.",
+      "Use the same workflow on every project. Only the product changes.",
     ],
     relatedSlugs: ["recommended-stack", "clean-architecture", "start-here"],
   },
@@ -22,7 +22,7 @@ export const PAGE_METADATA: Record<
   "design-workflow": {
     keyTakeaways: [
       "Requirements and wireframes come before production code.",
-      "Design for real devices, roles, and error states — not only happy paths.",
+      "Design for real devices, roles, and error states, not only happy paths.",
       "Handoff includes tokens, spacing, and component names developers will use.",
     ],
     relatedSlugs: ["figma-and-figma-ai", "reusable-components", "project-documentation-template"],
@@ -39,7 +39,7 @@ export const PAGE_METADATA: Record<
     keyTakeaways: [
       "Screens orchestrate; they should not contain business rules or raw fetch logic.",
       "Services own API calls; hooks own screen-level state wiring.",
-      "Dependencies point inward: UI → hooks → services → API.",
+      "Dependencies point inward: UI, hooks, services, then API.",
     ],
     relatedSlugs: ["folder-structure", "api-integration", "state-management"],
   },
@@ -61,7 +61,7 @@ export const PAGE_METADATA: Record<
   },
   "api-integration": {
     keyTakeaways: [
-      "Never scatter fetch calls across screens — use a service layer.",
+      "Never scatter fetch calls across screens. Use a service layer.",
       "Handle loading, empty, error, and retry states in every data-driven screen.",
       "Validate API contracts with types or schema tools where possible.",
     ],
@@ -78,14 +78,14 @@ export const PAGE_METADATA: Record<
   "state-management": {
     keyTakeaways: [
       "Use the smallest state scope that works: local first, then shared, then global.",
-      "Server state (API data) is not the same as UI state — separate them.",
+      "Server state (API data) is not the same as UI state. Keep them separate.",
       "Avoid duplicating the same data in multiple stores without a single source of truth.",
     ],
     relatedSlugs: ["clean-architecture", "api-integration"],
   },
   "security-checklist": {
     keyTakeaways: [
-      "Run this checklist before every production release — no exceptions.",
+      "Run this checklist before every production release. No exceptions.",
       "Assume devices can be compromised; protect tokens and sensitive data in transit and at rest.",
       "Validate inputs on the server; the app is not a security boundary alone.",
     ],
@@ -110,14 +110,14 @@ export const PAGE_METADATA: Record<
   "cicd-and-release-management": {
     keyTakeaways: [
       "Automate lint, test, and build on every PR to main.",
-      "Use staged releases: internal → beta → production with rollback plan.",
+      "Use staged releases: internal, then beta, then production with a rollback plan.",
       "Version and changelog every store submission.",
     ],
     relatedSlugs: ["testing-checklist", "monitoring-and-maintenance", "git-workflow"],
   },
   "monitoring-and-maintenance": {
     keyTakeaways: [
-      "Crash and error reporting from day one of production — not after an incident.",
+      "Crash and error reporting from day one of production, not after an incident.",
       "Define who responds to alerts and within what SLA.",
       "Use real metrics to prioritize fixes, not only loudest user complaints.",
     ],

@@ -4,20 +4,20 @@ MobilityForge is built to be **reused across companies and projects**. You keep 
 
 ## Quick customization checklist
 
-1. **Homepage** (`app/page.tsx`) — Replace organization name, hero copy, and footer.
-2. **Page header label** (`components/docs/PageHeader.tsx`) — e.g. "Your Company Guide".
-3. **Metadata** (`app/layout.tsx`) — Site title and description for SEO.
-4. **PR template** (`.github/pull_request_template.md`) — Set your hosted docs URL.
-5. **Release templates** (`templates/`) — Replace `your-docs-url` with your MobilityForge URL.
-6. **README** — Your repo name, deploy URL, and license.
-7. **Stack defaults** (`content/pages/recommended-stack.ts`) — Your approved tools if different from React Native + TypeScript.
-8. **Adoption** — Share `Adopt This Playbook` and `Organization Adoption Plan` with leads.
+1. **Homepage** (`app/page.tsx`): Replace organization name, hero copy, and footer.
+2. **Page header label** (`components/docs/PageHeader.tsx`): e.g. "Your Company Guide".
+3. **Metadata** (`app/layout.tsx`): Site title and description for SEO.
+4. **PR template** (`.github/pull_request_template.md`): Set your hosted docs URL.
+5. **Release templates** (`templates/`): Replace `your-docs-url` with your MobilityForge URL.
+6. **README**: Your repo name, deploy URL, and license.
+7. **Stack defaults** (`content/pages/recommended-stack.ts`): Your approved tools if different from React Native + TypeScript.
+8. **Adoption**: Share `Adopt This Playbook` and `Organization Adoption Plan` with leads.
 
 ## What not to change (unless you have a good reason)
 
-- Navigation order in `content/navigation.ts` — follows the learning path.
-- Checklist structure — teams rely on consistent release gates.
-- Service-layer and security patterns — these are framework-agnostic best practices.
+- Navigation order in `content/navigation.ts`: follows the learning path.
+- Checklist structure: teams rely on consistent release gates.
+- Service-layer and security patterns: these are framework-agnostic best practices.
 
 ## Adding a new guide
 

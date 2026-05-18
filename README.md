@@ -1,15 +1,15 @@
 # MobilityForge
 
-**MobilityForge** is a reusable mobile engineering playbook — a hosted documentation platform that teaches developers and teams how to build real-world mobile applications through a secure cross-platform engineering workflow.
+**MobilityForge** is a reusable mobile engineering playbook: a hosted documentation platform that teaches developers and teams how to build real-world mobile applications through a secure cross-platform engineering workflow.
 
-> Build mobile apps as secure engineering systems — not just screens.
+> Build mobile apps as secure engineering systems, not just screens.
 
 ## Who it is for
 
 - Developers and apprentices learning production mobile engineering
 - Startups, agencies, and in-house product teams
 - Mentors, tech leads, and reviewers who want one shared standard
-- **Any company** — fork, white-label, and deploy for your own projects ([CUSTOMIZE.md](./CUSTOMIZE.md))
+- **Any company**: fork, white-label, and deploy for your own projects ([CUSTOMIZE.md](./CUSTOMIZE.md))
 
 ## What you get
 
@@ -71,7 +71,7 @@ If you see stale routes or 500 errors after big changes:
 npm run dev:clean
 ```
 
-Open [http://localhost:3000](http://localhost:3000) — docs start at [http://localhost:3000/docs/start-here](http://localhost:3000/docs/start-here).
+Open [http://localhost:3000](http://localhost:3000). Docs start at [http://localhost:3000/docs/start-here](http://localhost:3000/docs/start-here).
 
 ## Build for production
 
@@ -83,14 +83,14 @@ npm start
 ## Deploy to Vercel
 
 1. Push this repository to GitHub.
-2. Go to [vercel.com](https://vercel.com) → **Add New Project**.
+2. Go to [vercel.com](https://vercel.com) and click **Add New Project**.
 3. Import the repo; framework preset: **Next.js**.
 4. Optional: set `NEXT_PUBLIC_SITE_URL` to your production URL (for sitemap/metadata).
 5. Deploy.
 
 ## Customize for your company
 
-See **[CUSTOMIZE.md](./CUSTOMIZE.md)** — homepage branding, metadata, stack defaults, and how to add new guides.
+See **[CUSTOMIZE.md](./CUSTOMIZE.md)** for homepage branding, metadata, stack defaults, and how to add new guides.
 
 ## Project structure
 

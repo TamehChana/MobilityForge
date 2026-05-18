@@ -15,7 +15,7 @@ export function StepFlow({ steps }: StepFlowProps) {
           <span className="font-medium text-slate-800">{step.label}</span>
           {index < steps.length - 1 && (
             <span className="hidden text-slate-400 sm:inline" aria-hidden>
-              →
+              /
             </span>
           )}
         </li>

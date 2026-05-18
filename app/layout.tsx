@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const siteDescription =
-  "Reusable mobile engineering playbook — secure cross-platform workflow, architecture, security, testing, CI/CD, and release for any team or company.";
+  "Reusable mobile engineering playbook: secure cross-platform workflow, architecture, security, testing, CI/CD, and release for any team or company.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(

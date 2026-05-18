@@ -11,7 +11,7 @@ export const stateManagement = definePage({
   howToApply: [
     {
       heading: "Recommended strategy",
-      body: "Local UI → useState. Global session → Zustand or Context. Server data → TanStack Query. Forms → React Hook Form. Sensitive tokens → secure storage. Preferences → AsyncStorage/MMKV.",
+      body: "Local UI: useState. Global session: Zustand or Context. Server data: TanStack Query. Forms: React Hook Form. Sensitive tokens: secure storage. Preferences: AsyncStorage or MMKV.",
     },
   ],
   commonMistakes: [

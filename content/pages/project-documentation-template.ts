@@ -5,7 +5,7 @@ export const projectDocumentationTemplate = definePage({
   title: "Project Documentation Template",
   description: "README sections every mobile project should include.",
   intro:
-    "Every mobile project README should answer what the app is, how to run it, how auth works, and how to release it — for the next developer.",
+    "Every mobile project README should answer what the app is, how to run it, how auth works, and how to release it for the next developer.",
   whyItMatters:
     "Documentation is how teams survive handoffs, apprenticeship rotation, and production support.",
   howToApply: [

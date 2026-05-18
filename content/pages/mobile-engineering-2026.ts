@@ -6,7 +6,7 @@ export const mobileEngineering2026 = definePage({
   description:
     "Why mobile development is full-stack systems engineering, not just screens.",
   intro:
-    "In 2026, mobile apps are part of larger digital systems: design, frontend, backend, database, authentication, security, testing, release, monitoring, and maintenance. Tools like React Native, Flutter, Firebase, and Supabase matter — but a repeatable engineering workflow matters more.",
+    "In 2026, mobile apps are part of larger digital systems: design, frontend, backend, database, authentication, security, testing, release, monitoring, and maintenance. Tools like React Native, Flutter, Firebase, and Supabase matter, but a repeatable engineering workflow matters more.",
   whyItMatters:
     "Teams that treat mobile apps as a collection of screens ship fast demos that fail in production. Your organization needs engineers who think in systems: plan before code, enforce security on the backend, test before release, and document for the next developer.",
   workflow: [

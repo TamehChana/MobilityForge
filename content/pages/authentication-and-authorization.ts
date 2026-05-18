@@ -7,7 +7,7 @@ export const authenticationAndAuthorization = definePage({
   intro:
     "Authentication answers who the user is. Authorization answers what they are allowed to do. The app guides UI; the backend enforces rules.",
   whyItMatters:
-    "Mobile apps can be reverse-engineered. Hiding an admin screen is not security — backend role checks on every protected request are.",
+    "Mobile apps can be reverse-engineered. Hiding an admin screen is not security. Backend role checks on every protected request are.",
   workflow: [
     { label: "Login" },
     { label: "Backend verifies" },

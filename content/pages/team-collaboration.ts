@@ -5,7 +5,7 @@ export const teamCollaboration = definePage({
   title: "Team Collaboration",
   description: "Roles, handoffs, and shared responsibility on mobile projects.",
   intro:
-    "Mobile apps are built by teams: product, design, mobile, backend, QA, security, and release — even when one person wears multiple hats.",
+    "Mobile apps are built by teams: product, design, mobile, backend, QA, security, and release, even when one person wears multiple hats.",
   whyItMatters:
     "Clear roles and handoffs reduce confusion, duplicate work, and security gaps between frontend and backend.",
   workflow: [

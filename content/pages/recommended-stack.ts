@@ -7,7 +7,7 @@ export const recommendedStack = definePage({
   intro:
     "The recommended default mobile stack is React Native + Expo + TypeScript, with backend and tooling chosen per project. The stack supports cross-platform delivery while keeping architecture, security, and testing consistent across your portfolio.",
   whyItMatters:
-    "A shared default stack reduces decision fatigue and helps mentors review code predictably. Flexibility remains — but every project should document why a different backend was chosen.",
+    "A shared default stack reduces decision fatigue and helps mentors review code predictably. You can choose other tools, but every project should document why a different backend was chosen.",
   howToApply: [
     {
       heading: "Default mobile stack",

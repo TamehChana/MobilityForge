@@ -5,7 +5,7 @@ export const monitoringAndMaintenance = definePage({
   title: "Monitoring and Maintenance",
   description: "Post-launch crashes, errors, and continuous improvement.",
   intro:
-    "Work does not end at release. Monitor crashes, failed logins, API errors, and payment failures — then fix, patch, and document.",
+    "Work does not end at release. Monitor crashes, failed logins, API errors, and payment failures, then fix, patch, and document.",
   whyItMatters:
     "A weak team waits for complaints. A strong team detects issues early with Sentry, Crashlytics, backend logs, and analytics.",
   howToApply: [

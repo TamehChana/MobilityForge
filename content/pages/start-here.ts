@@ -3,29 +3,29 @@ import { definePage } from "./define-page";
 export const startHere = definePage({
   slug: "start-here",
   title: "Start Here",
-  description: "Your learning path through MobilityForge — usable on any mobile project, any company.",
+  description: "Your learning path through MobilityForge for any mobile project and any company.",
   intro:
-    "MobilityForge is a reusable mobile engineering playbook. Whether you are an apprentice, a junior developer, a senior engineer, or a team lead, use this page as your map. You do not read everything at once — you follow the path that matches your current project phase.",
+    "MobilityForge is a reusable mobile engineering playbook. Whether you are an apprentice, a junior developer, a senior engineer, or a team lead, use this page as your map. You do not read everything at once. Follow the path that matches your current project phase.",
   whyItMatters:
     "Without a shared starting point, every project reinvents folder structure, security habits, and release steps. Teams waste time arguing about basics instead of shipping value. A single playbook scales across products, clients, and team changes.",
   keyTakeaways: [
     "Use MobilityForge per project phase, not as a one-time read.",
     "Copy checklists into each repo README and PR templates.",
-    "Adapt examples to your product — the workflow stays the same.",
+    "Adapt examples to your product. The workflow stays the same.",
     "Mentors review against the same pages every sprint.",
   ],
   workflow: [
     { label: "Read Start Here" },
     { label: "Adopt playbook" },
     { label: "Pick stack" },
-    { label: "Design → Build" },
+    { label: "Design then build" },
     { label: "Secure & test" },
     { label: "Release & monitor" },
   ],
   howToApply: [
     {
       heading: "If you are starting a new project",
-      body: "Read Recommended Stack → Folder Structure → Clean Architecture → Design Workflow. Define users, roles, and backend choice in writing before coding. Copy the Project Documentation Template into your repo on day one.",
+      body: "Read Recommended Stack, then Folder Structure, Clean Architecture, and Design Workflow. Define users, roles, and backend choice in writing before coding. Copy the Project Documentation Template into your repo on day one.",
     },
     {
       heading: "If you are mid-project",

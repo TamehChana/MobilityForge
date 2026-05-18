@@ -5,7 +5,7 @@ export const cicdAndReleaseManagement = definePage({
   title: "CI/CD and Release Management",
   description: "Automated checks, builds, and controlled releases.",
   intro:
-    "CI/CD automates checks and builds when code changes. Adopt gradually: TypeScript + lint + tests → GitHub Actions → EAS Build for mobile.",
+    "CI/CD automates checks and builds when code changes. Adopt gradually: TypeScript, lint, and tests, then GitHub Actions, then EAS Build for mobile.",
   whyItMatters:
     "Controlled releases prevent broken builds reaching users and reduce manual mistakes during launch week.",
   workflow: [

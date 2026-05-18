@@ -11,7 +11,7 @@ export const cleanArchitecture = definePage({
   howToApply: [
     {
       heading: "Layers",
-      body: "Screens (UI) → hooks/features (logic) → services (API) → store (session) → types → utils → navigation → storage.",
+      body: "Screens (UI), hooks or features (logic), services (API), store (session), types, utils, navigation, and storage. Each layer has one job.",
     },
     {
       heading: "Good login split",
@@ -27,7 +27,7 @@ export const cleanArchitecture = definePage({
     {
       title: "Good: separated files",
       language: "text",
-      code: "LoginScreen.tsx → useLogin.ts → authService.ts → authStore.ts → secureStorage.ts",
+      code: "LoginScreen.tsx, useLogin.ts, authService.ts, authStore.ts, secureStorage.ts",
     },
   ],
   commonMistakes: [

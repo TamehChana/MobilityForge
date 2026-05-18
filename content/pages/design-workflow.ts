@@ -7,7 +7,7 @@ export const designWorkflow = definePage({
   intro:
     "Good mobile development starts before code. Understand the user, map flows, design in Figma, prototype, collect feedback, then hand off to developers.",
   whyItMatters:
-    "Skipping design forces developers to guess layout, spacing, and navigation — causing rework, inconsistent UI, and poor usability.",
+    "Skipping design forces developers to guess layout, spacing, and navigation. That leads to rework, inconsistent UI, and poor usability.",
   workflow: [
     { label: "Problem" },
     { label: "Requirements" },
@@ -21,7 +21,7 @@ export const designWorkflow = definePage({
   howToApply: [
     {
       heading: "Standard design steps",
-      body: "Sketch or generate wireframes → refine in Figma → build reusable components → define colors, typography, spacing → clickable prototype → test with users or mentors → developer handoff with specs.",
+      body: "Sketch or generate wireframes, refine in Figma, build reusable components, define colors and typography, create a clickable prototype, test with users or mentors, then hand off to developers with clear specs.",
     },
   ],
   commonMistakes: [

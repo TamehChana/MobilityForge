@@ -68,7 +68,7 @@ PRs must link the relevant checklist page before merge.`,
       code: `## Feature: Weekly report
 **User:** Apprentice
 **Goal:** Submit hours and notes
-**Screens:** List → Form → Success
+**Screens:** List, Form, Success
 **States:** loading, empty, error, offline
 **API:** POST /reports`,
     },
@@ -118,7 +118,7 @@ export async function saveSession(token: string) {
   ],
   "security-checklist": [
     {
-      title: "apiClient — auth header only",
+      title: "apiClient: auth header only",
       language: "typescript",
       code: `// Good: token from secure storage, added in one place
 headers: { Authorization: \`Bearer \${token}\` }
@@ -152,7 +152,7 @@ git push -u origin feature/weekly-report-form`,
   ],
   "cicd-and-release-management": [
     {
-      title: "GitHub Actions — lint and test",
+      title: "GitHub Actions: lint and test",
       language: "yaml",
       code: `name: CI
 on: [pull_request]

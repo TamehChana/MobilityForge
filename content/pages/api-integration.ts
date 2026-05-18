@@ -5,7 +5,7 @@ export const apiIntegration = definePage({
   title: "API Integration",
   description: "Service-layer pattern for backend communication.",
   intro:
-    "Screens should not call the backend directly. Use a service layer: Screen → hook → service → API → database.",
+    "Screens should not call the backend directly. Use a service layer: screen, hook, service, API, then database.",
   whyItMatters:
     "Centralized API logic means one place to update URLs, tokens, and error handling when the backend changes.",
   workflow: [

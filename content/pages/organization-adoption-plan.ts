@@ -23,27 +23,27 @@ export const organizationAdoptionPlan = definePage({
   ],
   howToApply: [
     {
-      heading: "Phase 1 — Publish (week 1–2)",
-      body: "Host MobilityForge. Announce Start Here. Leaders read Adopt This Playbook. No enforcement yet — awareness only.",
+      heading: "Phase 1: Publish (weeks 1-2)",
+      body: "Host MobilityForge. Announce Start Here. Leaders read Adopt This Playbook. No enforcement yet, only awareness.",
     },
     {
-      heading: "Phase 2 — Pilot project (week 3–6)",
+      heading: "Phase 2: Pilot project (weeks 3-6)",
       body: "One team builds a feature using Folder Structure, API Integration, and Design Workflow. Retrospective: what helped, what was missing.",
     },
     {
-      heading: "Phase 3 — Collaboration standards (week 7–10)",
+      heading: "Phase 3: Collaboration standards (weeks 7-10)",
       body: "Require Git Workflow: feature branches, PR descriptions, one reviewer minimum. Link MobilityForge in PR template.",
     },
     {
-      heading: "Phase 4 — Quality gates (week 11–14)",
+      heading: "Phase 4: Quality gates (weeks 11-14)",
       body: "Security Checklist and Testing Checklist required before merge to main for production apps. Mentors use pages in review comments.",
     },
     {
-      heading: "Phase 5 — Delivery (week 15+)",
+      heading: "Phase 5: Delivery (week 15+)",
       body: "Introduce CI/CD stages from CI/CD page. Enable crash monitoring per Monitoring page. Track release quality metrics.",
     },
     {
-      heading: "Phase 6 — Maintain (ongoing)",
+      heading: "Phase 6: Maintain (ongoing)",
       body: "Quarterly playbook review. Update stack page when defaults change. Add new checklists when incidents teach new lessons.",
     },
   ],

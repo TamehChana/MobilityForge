@@ -5,8 +5,8 @@ Use before every App Store / Play Store submission or production deploy.
 ## Pre-release
 
 - [ ] Version number and changelog updated
-- [ ] [Security checklist](https://your-docs-url/docs/security-checklist) — all items verified
-- [ ] [Testing checklist](https://your-docs-url/docs/testing-checklist) — all items verified
+- [ ] [Security checklist](https://your-docs-url/docs/security-checklist) (all items verified)
+- [ ] [Testing checklist](https://your-docs-url/docs/testing-checklist) (all items verified)
 - [ ] Auth flows tested (login, logout, expired session, role change)
 - [ ] No debug logging of tokens or PII
 - [ ] Backend migrations / config deployed before mobile release
@@ -26,5 +26,5 @@ Use before every App Store / Play Store submission or production deploy.
 ## Post-release
 
 - [ ] Smoke test on production build
-- [ ] Monitor crash rate for 24–48 hours
+- [ ] Monitor crash rate for 24-48 hours
 - [ ] Notify team in shared channel

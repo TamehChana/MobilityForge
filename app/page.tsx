@@ -62,12 +62,12 @@ export default function HomePage() {
             Universal mobile engineering playbook
           </p>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Build mobile apps as secure engineering systems — not just screens
+            Build mobile apps as secure engineering systems, not just screens
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
             MobilityForge teaches developers and teams how to plan, design, build, secure,
             test, release, and maintain real-world cross-platform apps. Use it on any
-            product, at any company — the workflow stays the same.
+            product, at any company. The workflow stays the same.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -142,7 +142,7 @@ export default function HomePage() {
                           href={`/docs/${slug}`}
                           className="text-sm text-brand-600 hover:text-brand-700"
                         >
-                          {doc.title} →
+                          {doc.title}
                         </Link>
                       </li>
                     );
@@ -168,7 +168,7 @@ export default function HomePage() {
       </section>
 
       <footer className="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-        MobilityForge — reusable mobile engineering playbook
+        MobilityForge. Mobile engineering playbook.
       </footer>
     </div>
   );

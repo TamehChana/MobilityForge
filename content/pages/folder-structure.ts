@@ -5,7 +5,7 @@ export const folderStructure = definePage({
   title: "Folder Structure",
   description: "Standard React Native project layout any team can reuse.",
   intro:
-    "Every React Native project should use a predictable folder structure so any developer can navigate the codebase on day one — regardless of who built it last.",
+    "Every React Native project should use a predictable folder structure so any developer can navigate the codebase on day one, no matter who built it last.",
   whyItMatters:
     "Random folder layouts slow onboarding and cause duplicated patterns. A standard structure makes reviews faster and mentorship easier.",
   howToApply: [

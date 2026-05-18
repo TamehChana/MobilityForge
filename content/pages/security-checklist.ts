@@ -11,7 +11,7 @@ export const securityChecklist = definePage({
   howToApply: [
     {
       heading: "Shift-left security",
-      body: "Include security in requirements, design reviews, pull requests, and release checklists — not only a final scan before launch.",
+      body: "Include security in requirements, design reviews, pull requests, and release checklists, not only a final scan before launch.",
     },
     {
       heading: "Backend is the authority",

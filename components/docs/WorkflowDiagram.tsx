@@ -7,7 +7,7 @@ type WorkflowDiagramProps = {
 
 export function WorkflowDiagram({ steps, title }: WorkflowDiagramProps) {
   return (
-    <section className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+    <section className="rounded-xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-700 dark:bg-slate-800/50">
       {title && <p className="mb-4 text-sm font-semibold text-slate-800">{title}</p>}
       <section className="flex flex-col gap-3 md:flex-row md:flex-wrap md:items-center">
         {steps.map((step, i) => (
@@ -16,8 +16,8 @@ export function WorkflowDiagram({ steps, title }: WorkflowDiagramProps) {
               {step.label}
             </span>
             {i < steps.length - 1 && (
-              <span className="hidden text-slate-400 md:inline" aria-hidden>
-                →
+              <span className="hidden text-xs text-slate-400 md:inline" aria-hidden>
+                /
               </span>
             )}
           </span>

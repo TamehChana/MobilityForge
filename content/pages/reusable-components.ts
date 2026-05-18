@@ -5,7 +5,7 @@ export const reusableComponents = definePage({
   title: "Reusable Components",
   description: "Shared UI building blocks and design consistency.",
   intro:
-    "Build AppButton, AppInput, AppCard, ScreenContainer, LoadingSpinner, EmptyState, and ErrorMessage once — reuse everywhere.",
+    "Build AppButton, AppInput, AppCard, ScreenContainer, LoadingSpinner, EmptyState, and ErrorMessage once, then reuse everywhere.",
   whyItMatters:
     "Consistency, faster development, easier design updates, and cleaner reviews when every screen uses the same primitives.",
   howToApply: [
