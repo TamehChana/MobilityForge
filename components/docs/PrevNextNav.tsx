@@ -20,7 +20,7 @@ export function PrevNextNav({ slug }: PrevNextNavProps) {
           className="group surface-card-elevated block p-5"
         >
           <span className="section-label">Previous</span>
-          <p className="mt-2 font-medium text-on-surface group-hover:text-brand-600 dark:text-[#e3e3e3] dark:group-hover:text-[#8ab4f8]">
+          <p className="mt-2 font-medium text-ink group-hover:text-brand-600 dark:text-[#e3e3e3] dark:group-hover:text-[#8ab4f8]">
             {prev.title}
           </p>
         </Link>
@@ -33,7 +33,7 @@ export function PrevNextNav({ slug }: PrevNextNavProps) {
           className="group surface-card-elevated block p-5 text-right sm:col-start-2"
         >
           <span className="section-label">Next</span>
-          <p className="mt-2 font-medium text-on-surface group-hover:text-brand-600 dark:text-[#e3e3e3] dark:group-hover:text-[#8ab4f8]">
+          <p className="mt-2 font-medium text-ink group-hover:text-brand-600 dark:text-[#e3e3e3] dark:group-hover:text-[#8ab4f8]">
             {next.title}
           </p>
         </Link>

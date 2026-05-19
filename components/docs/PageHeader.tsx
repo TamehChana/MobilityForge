@@ -7,10 +7,10 @@ export function PageHeader({ title, description }: PageHeaderProps) {
   return (
     <header className="border-b border-outline pb-8 dark:border-[#3c4043]">
       <p className="chip">MobilityForge guide</p>
-      <h1 className="mt-4 text-display text-on-surface dark:text-[#e3e3e3] sm:text-[2.5rem]">
+      <h1 className="mt-4 text-display text-ink dark:text-[#e3e3e3] sm:text-[2.5rem]">
         {title}
       </h1>
-      <p className="mt-4 text-body-lg text-on-surface-variant dark:text-[#c4c7c5]">
+      <p className="mt-4 text-body-lg text-ink-variant dark:text-[#c4c7c5]">
         {description}
       </p>
     </header>

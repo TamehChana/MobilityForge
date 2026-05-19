@@ -16,7 +16,7 @@ export function DocTableOfContents({ items }: DocTableOfContentsProps) {
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
-                className="block rounded-full px-3 py-1.5 text-sm text-on-surface-variant transition-colors hover:bg-surface hover:text-brand-600 dark:text-[#c4c7c5] dark:hover:bg-[#1e1f20] dark:hover:text-[#8ab4f8]"
+                className="block rounded-full px-3 py-1.5 text-sm text-ink-variant transition-colors hover:bg-surface hover:text-brand-600 dark:text-[#c4c7c5] dark:hover:bg-[#1e1f20] dark:hover:text-[#8ab4f8]"
               >
                 {item.label}
               </a>

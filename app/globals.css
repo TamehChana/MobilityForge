@@ -46,13 +46,13 @@ body {
   h1,
   h2,
   h3 {
-    @apply scroll-mt-28 text-on-surface dark:text-[#e3e3e3];
+    @apply scroll-mt-28 text-ink dark:text-[#e3e3e3];
   }
 }
 
 @layer components {
   .doc-prose {
-    @apply text-[15px] leading-7 text-on-surface-variant dark:text-[#c4c7c5];
+    @apply text-[15px] leading-7 text-ink-variant dark:text-[#c4c7c5];
   }
 
   .surface-card {
@@ -99,7 +99,7 @@ body {
 
   .input-field {
     @apply w-full rounded-full border border-outline bg-surface py-2.5 pl-11 pr-4 text-sm
-      text-on-surface shadow-elevation-1 transition-shadow placeholder:text-on-surface-muted
+      text-ink shadow-elevation-1 transition-shadow placeholder:text-ink-muted
       focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100
       dark:border-[#5f6368] dark:bg-[#1e1f20] dark:text-[#e3e3e3] dark:focus:ring-[#394457];
   }
@@ -109,12 +109,12 @@ body {
   }
 
   .nav-link {
-    @apply rounded-full px-4 py-2 text-sm text-on-surface-variant transition-colors
+    @apply rounded-full px-4 py-2 text-sm text-ink-variant transition-colors
       hover:bg-surface-container dark:text-[#c4c7c5] dark:hover:bg-[#28292a];
   }
 
   .section-label {
-    @apply text-xs font-medium tracking-wide text-on-surface-muted uppercase;
+    @apply text-xs font-medium tracking-wide text-ink-muted uppercase;
   }
 
   .hero-mesh {

@@ -25,7 +25,7 @@ export function Sidebar({ className, onNavigate }: SidebarProps) {
     >
       <div className="border-b border-outline px-4 py-5 dark:border-[#3c4043]">
         <p className="section-label">Documentation</p>
-        <p className="mt-1 text-sm text-on-surface-variant dark:text-[#c4c7c5]">
+        <p className="mt-1 text-sm text-ink-variant dark:text-[#c4c7c5]">
           {DOC_NAV.length} guides for any project
         </p>
         <DocSearch className="mt-4" onNavigate={onNavigate} />
@@ -36,7 +36,7 @@ export function Sidebar({ className, onNavigate }: SidebarProps) {
           if (!items.length) return null;
           return (
             <section key={category.id} className="mb-6 last:mb-0">
-              <h3 className="mb-2 px-4 text-[11px] font-medium tracking-wide text-on-surface-muted uppercase">
+              <h3 className="mb-2 px-4 text-[11px] font-medium tracking-wide text-ink-muted uppercase">
                 {category.label}
               </h3>
               <ul className="space-y-0.5">

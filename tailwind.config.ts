@@ -25,10 +25,10 @@ const config: Config = {
           container: "#f1f3f4",
           "container-high": "#e8eaed",
         },
-        on: {
-          surface: "#1f1f1f",
-          "surface-variant": "#444746",
-          "surface-muted": "#5f6368",
+        ink: {
+          DEFAULT: "#1f1f1f",
+          variant: "#444746",
+          muted: "#5f6368",
         },
         outline: {
           DEFAULT: "#dadce0",

@@ -17,11 +17,11 @@ export function Logo({ className, showTagline = false, href = "/" }: LogoProps) 
         <span className="text-sm font-bold text-white dark:text-[#062e6f]">M</span>
       </span>
       <span className="flex flex-col">
-        <span className="text-[15px] font-medium tracking-tight text-on-surface dark:text-[#e3e3e3]">
+        <span className="text-[15px] font-medium tracking-tight text-ink dark:text-[#e3e3e3]">
           MobilityForge
         </span>
         {showTagline && (
-          <span className="hidden text-xs text-on-surface-muted sm:block">
+          <span className="hidden text-xs text-ink-muted sm:block">
             Mobile engineering playbook
           </span>
         )}

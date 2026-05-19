@@ -58,10 +58,10 @@ export default function HomePage() {
       <section className="hero-mesh border-b border-outline dark:border-[#3c4043]">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:py-28">
           <p className="chip w-fit">Mobile engineering playbook</p>
-          <h1 className="mt-6 max-w-4xl text-display text-on-surface sm:text-display-lg dark:text-[#e3e3e3]">
+          <h1 className="mt-6 max-w-4xl text-display text-ink sm:text-display-lg dark:text-[#e3e3e3]">
             Build mobile apps as secure engineering systems, not just screens
           </h1>
-          <p className="mt-6 max-w-2xl text-body-lg text-on-surface-variant dark:text-[#c4c7c5]">
+          <p className="mt-6 max-w-2xl text-body-lg text-ink-variant dark:text-[#c4c7c5]">
             MobilityForge teaches developers and teams how to plan, design, build, secure,
             test, release, and maintain real-world cross-platform apps. Use it on any
             product, at any company. The workflow stays the same.
@@ -77,10 +77,10 @@ export default function HomePage() {
           <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-outline pt-10 dark:border-[#3c4043] sm:max-w-lg">
             {STATS.map((stat) => (
               <div key={stat.label}>
-                <dt className="text-3xl font-normal text-on-surface dark:text-[#e3e3e3]">
+                <dt className="text-3xl font-normal text-ink dark:text-[#e3e3e3]">
                   {stat.value}
                 </dt>
-                <dd className="mt-1 text-sm text-on-surface-muted">{stat.label}</dd>
+                <dd className="mt-1 text-sm text-ink-muted">{stat.label}</dd>
               </div>
             ))}
           </dl>
@@ -88,8 +88,8 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-        <h2 className="text-headline text-on-surface dark:text-[#e3e3e3]">What is MobilityForge?</h2>
-        <p className="mt-4 max-w-3xl text-body-lg text-on-surface-variant dark:text-[#c4c7c5]">
+        <h2 className="text-headline text-ink dark:text-[#e3e3e3]">What is MobilityForge?</h2>
+        <p className="mt-4 max-w-3xl text-body-lg text-ink-variant dark:text-[#c4c7c5]">
           A hosted documentation platform that turns mobile engineering standards into
           practical guides: stack, design, architecture, API patterns, security and testing
           checklists, Git workflow, CI/CD, monitoring, and team collaboration. Designed so
@@ -99,8 +99,8 @@ export default function HomePage() {
 
       <section className="bg-surface-dim py-16 dark:bg-[#1e1f20] lg:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-headline text-on-surface dark:text-[#e3e3e3]">Built to reuse</h2>
-          <p className="mt-2 max-w-2xl text-on-surface-variant dark:text-[#c4c7c5]">
+          <h2 className="text-headline text-ink dark:text-[#e3e3e3]">Built to reuse</h2>
+          <p className="mt-2 max-w-2xl text-ink-variant dark:text-[#c4c7c5]">
             One workflow, many products. Copy checklists into PRs and ship with confidence.
           </p>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -117,7 +117,7 @@ export default function HomePage() {
                 >
                   <CheckIcon />
                 </span>
-                <span className="text-sm leading-6 text-on-surface-variant dark:text-[#c4c7c5]">
+                <span className="text-sm leading-6 text-ink-variant dark:text-[#c4c7c5]">
                   {item}
                 </span>
               </li>
@@ -127,10 +127,10 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
-        <h2 className="text-headline text-on-surface dark:text-[#e3e3e3]">
+        <h2 className="text-headline text-ink dark:text-[#e3e3e3]">
           Core engineering workflow
         </h2>
-        <p className="mt-2 text-on-surface-variant dark:text-[#c4c7c5]">
+        <p className="mt-2 text-ink-variant dark:text-[#c4c7c5]">
           Every serious mobile project should follow this path.
         </p>
         <div className="mt-8">
@@ -140,14 +140,14 @@ export default function HomePage() {
 
       <section className="border-t border-outline bg-surface-dim py-16 dark:border-[#3c4043] dark:bg-[#1e1f20] lg:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-headline text-on-surface dark:text-[#e3e3e3]">Main learning areas</h2>
-          <p className="mt-2 text-on-surface-variant dark:text-[#c4c7c5]">
+          <h2 className="text-headline text-ink dark:text-[#e3e3e3]">Main learning areas</h2>
+          <p className="mt-2 text-ink-variant dark:text-[#c4c7c5]">
             {DOC_NAV.length} guides across the full delivery lifecycle.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {LEARNING_AREAS.map((area) => (
               <article key={area.title} className="surface-card-elevated p-6">
-                <h3 className="text-title text-on-surface dark:text-[#e3e3e3]">{area.title}</h3>
+                <h3 className="text-title text-ink dark:text-[#e3e3e3]">{area.title}</h3>
                 <ul className="mt-4 space-y-2">
                   {area.slugs.map((slug) => {
                     const doc = DOC_NAV.find((d) => d.slug === slug);
@@ -160,7 +160,7 @@ export default function HomePage() {
                         >
                           <span>{doc.title}</span>
                           <span
-                            className="text-on-surface-muted opacity-0 transition-opacity group-hover:opacity-100"
+                            className="text-ink-muted opacity-0 transition-opacity group-hover:opacity-100"
                             aria-hidden
                           >
                             ›
@@ -177,10 +177,10 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6">
-        <h2 className="text-headline text-on-surface dark:text-[#e3e3e3]">
+        <h2 className="text-headline text-ink dark:text-[#e3e3e3]">
           Ready to build the right way?
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-on-surface-variant dark:text-[#c4c7c5]">
+        <p className="mx-auto mt-4 max-w-xl text-ink-variant dark:text-[#c4c7c5]">
           Begin with Start Here, then open the guide that matches your current sprint.
         </p>
         <Link href={`/docs/${FIRST_DOC_SLUG}`} className="btn-primary mt-8">
@@ -188,7 +188,7 @@ export default function HomePage() {
         </Link>
       </section>
 
-      <footer className="border-t border-outline py-10 text-center text-sm text-on-surface-muted dark:border-[#3c4043]">
+      <footer className="border-t border-outline py-10 text-center text-sm text-ink-muted dark:border-[#3c4043]">
         <p>MobilityForge. Mobile engineering playbook.</p>
       </footer>
     </div>

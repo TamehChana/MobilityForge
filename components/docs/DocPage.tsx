@@ -30,7 +30,7 @@ function SectionHeading({
   return (
     <h2
       id={id}
-      className="scroll-mt-28 text-title text-on-surface dark:text-[#e3e3e3]"
+      className="scroll-mt-28 text-title text-ink dark:text-[#e3e3e3]"
     >
       {children}
     </h2>

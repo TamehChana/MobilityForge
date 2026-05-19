@@ -41,7 +41,7 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
       {query.trim() && (
         <ul className="mt-2 max-h-72 overflow-y-auto rounded-2xl border border-outline bg-surface py-1 shadow-elevation-3 dark:border-[#3c4043] dark:bg-[#1e1f20]">
           {results.length === 0 ? (
-            <li className="px-4 py-3 text-sm text-on-surface-muted">No guides found</li>
+            <li className="px-4 py-3 text-sm text-ink-muted">No guides found</li>
           ) : (
             results.map((item) => (
               <li key={item.slug}>
@@ -53,10 +53,10 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
                   }}
                   className="block px-4 py-3 transition-colors hover:bg-surface-container dark:hover:bg-[#28292a]"
                 >
-                  <p className="text-sm font-medium text-on-surface dark:text-[#e3e3e3]">
+                  <p className="text-sm font-medium text-ink dark:text-[#e3e3e3]">
                     {item.title}
                   </p>
-                  <p className="mt-0.5 line-clamp-2 text-xs text-on-surface-muted">
+                  <p className="mt-0.5 line-clamp-2 text-xs text-ink-muted">
                     {item.snippet || item.description}
                   </p>
                 </Link>
@@ -72,7 +72,7 @@ export function DocSearch({ onNavigate, className }: DocSearchProps) {
 function SearchIcon() {
   return (
     <svg
-      className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-on-surface-muted"
+      className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-ink-muted"
       fill="currentColor"
       viewBox="0 0 24 24"
       aria-hidden

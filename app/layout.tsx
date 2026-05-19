@@ -63,7 +63,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body
-        className={`${roboto.variable} ${robotoMono.variable} font-sans antialiased text-on-surface`}
+        className={`${roboto.variable} ${robotoMono.variable} font-sans antialiased text-ink`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

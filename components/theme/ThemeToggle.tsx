@@ -9,7 +9,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      className="inline-flex h-10 w-10 items-center justify-center rounded-full text-on-surface-variant transition-colors hover:bg-surface-container dark:text-[#c4c7c5] dark:hover:bg-[#28292a]"
+      className="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink-variant transition-colors hover:bg-surface-container dark:text-[#c4c7c5] dark:hover:bg-[#28292a]"
       aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
     >
       {theme === "light" ? <MoonIcon /> : <SunIcon />}

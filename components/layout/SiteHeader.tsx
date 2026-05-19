@@ -26,7 +26,7 @@ export function SiteHeader({ variant = "docs", onMenuToggle, menuOpen }: SiteHea
             <button
               type="button"
               onClick={onMenuToggle}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-on-surface-variant transition-colors hover:bg-surface-container lg:hidden dark:hover:bg-[#28292a]"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink-variant transition-colors hover:bg-surface-container lg:hidden dark:hover:bg-[#28292a]"
               aria-expanded={menuOpen}
               aria-label="Open menu"
             >

@@ -11,7 +11,7 @@ export function KeyTakeaways({ items }: KeyTakeawaysProps) {
         {items.map((item) => (
           <li
             key={item}
-            className="flex gap-3 text-sm leading-relaxed text-on-surface-variant dark:text-[#c4c7c5]"
+            className="flex gap-3 text-sm leading-relaxed text-ink-variant dark:text-[#c4c7c5]"
           >
             <span
               className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-[10px] font-bold text-white dark:bg-[#8ab4f8] dark:text-[#062e6f]"
